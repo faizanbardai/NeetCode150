@@ -1,0 +1,24 @@
+{
+  "name": "neetcode150",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/faizanbardai/NeetCode150#readme",
+  "bugs": {
+    "url": "https://github.com/faizanbardai/NeetCode150/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faizanbardai/NeetCode150.git"
+  },
+  "license": "ISC",
+  "author": "FayJu",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "vitest": "^5.1.0"
+  }
+}
