@@ -2,7 +2,7 @@
   Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 */
 
-export function validAnagram(s: string, t: string): boolean {
+export function validAnagram2(s: string, t: string): boolean {
   if (!s.length || !t.length) return false
   if (s.length !== t.length) return false
 
@@ -19,4 +19,20 @@ export function validAnagram(s: string, t: string): boolean {
     sMap.set(item, sCount - 1)
   }
   return true
+}
+
+// Preferred for coding interview
+
+export function validAnagram(s: string, t: string): boolean {
+  if (!s.length || !t.length) return false
+  if (s.length !== t.length) return false
+
+  const alphabets = Array(26).fill(0)
+
+  for (let i = 0; i < s.length; i++) {
+    alphabets[s.charCodeAt(i) - 97]++
+    alphabets[t.charCodeAt(i) - 97]--
+  }
+
+  return alphabets.every((x) => x === 0)
 }
