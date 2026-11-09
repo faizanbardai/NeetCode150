@@ -3,7 +3,7 @@ import { groupAnagram } from './groupAnagrams'
 
 describe('groupAnagram', () => {
   it('groups anagrams together', () => {
-    expect(groupAnagram(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])).contains([
+    expect(groupAnagram(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])).toEqual([
       ['eat', 'tea', 'ate'],
       ['tan', 'nat'],
       ['bat'],
